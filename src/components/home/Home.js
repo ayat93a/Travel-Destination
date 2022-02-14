@@ -2,7 +2,7 @@
 import tourData from './data/db.json'
 =
 import Header from '../header/Header'
-import Tours from '../tours/Tours'
+import Tours from '<div className=""></div>/tours/Tours'
 import Footer from '../footer/Footer'
 
 

@@ -8,9 +8,18 @@ import Footer from '../footer/Footer'
 
 function home (){
     return (
-    
         <div>
-            <Tours data={tourData}/>
+            <h1></h1>
+            <div> </div>
+                <br></br>
+            <img/>
+                <br></br>
+            <hr></hr>
+                <br></br>
+            <div>
+            <a></a>
+            <p></p>
+            </div>
         </div>
     )
 }

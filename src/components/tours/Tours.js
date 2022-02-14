@@ -3,14 +3,24 @@ function Tours(props){
 
     return (
         <>
-       { props.data.map(tour , index =>{
-            return 
+       { props.data.map((tour, index) =>{
+            return (
          <div key = {index}>
-               <div>Name :{tour.name}</div>
-            <img src = {tour.image} />
+            <br>
+            </br>
             
+               <div>Name : {tour.name}</div>
+            <br>
+            </br>
+            
+        <img src = {tour.image} /> 
+            <br>
+            </br>
+            <br>
+            </br>
+             
          </div>  
-           
+       ); 
         })    
     }
     </>

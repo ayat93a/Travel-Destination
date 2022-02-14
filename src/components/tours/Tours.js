@@ -1,4 +1,6 @@
+
 function Tours(props){
+
     return (
         <>
        { props.data.map((tour, index) =>{
@@ -24,4 +26,5 @@ function Tours(props){
     </>
     )
 }
+
 export default Tours;

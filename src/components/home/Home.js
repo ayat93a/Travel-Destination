@@ -1,23 +1,15 @@
-import tourData from './data/db.json'
+import tourData from '../../data/db.json'
 import Header from '../header/Header'
-import Tours from '<div className=""></div>/tours/Tours'
+import Tours from '../tours/Tours'
 import Footer from '../footer/Footer'
 
-function home (){
+function Home (){
     return (
-        <div>
-            <h1></h1>
-            <div> </div>
-                <br></br>
-            <img/>
-                <br></br>
-            <hr></hr>
-                <br></br>
-            <div>
-            <a></a>
-            <p></p>
-            </div>
-        </div>
+        <>
+        <Header/>
+        <Tours data = {tourData}/>
+        <Footer/>
+        </>
     )
 }
 export default Home;

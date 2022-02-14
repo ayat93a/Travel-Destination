@@ -1,13 +1,10 @@
-import toursData from './src/data/db.json'
 
-import Home from '../src/components/home/Home'
-
+import './src/App.css';
+import Home from './components/home/Home'
 
 
 function App() {
   return <div> 
-    
-<Tours data={toursData}/>
   </div>  
 }
 

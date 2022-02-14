@@ -1,3 +1,4 @@
+
 function tours(props){
     return (
         <>
@@ -19,4 +20,5 @@ function tours(props){
     </>
     )
 }
+
 export default Tours;

@@ -1,7 +1,10 @@
+
 import { Route, Routes } from 'react-router-dom';
+
 import './App.css';
 import Home from './components/home/Home';
 import TourDetails from './components/TourDetails/TourDetails'
+
 
 
 function App() {

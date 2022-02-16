@@ -1,8 +1,11 @@
+
 import { Link } from "react-router-dom";
 import Tour  from "./tour/Tour";
 
 
+
 function Tours(props){
+
     return (
         <>
 
@@ -36,4 +39,5 @@ function Tours(props){
     </>
     )
 }
+
 export default Tours;

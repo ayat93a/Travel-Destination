@@ -11,7 +11,7 @@ function Home (){
     return (
         <>
         <Header/>
-        <Tours data = {tourData}/>
+        <Tours data= {tourData}/>
         <Footer/>
         </>
     )

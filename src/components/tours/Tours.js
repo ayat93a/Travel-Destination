@@ -6,9 +6,11 @@ function Tours(props){
     return (
         <>
 
-    {props.data.map(item =>{
+    {props.data.map((item ,index) =>{
         return(
-            <Link to = {'/city/${item.id}'}><Tour tour ={item}/></Link>
+            <div key = {index}>
+            <Link to = {`/city/${item.id}`}><Tour tour ={item}/></Link>
+            </div>
         )
     })}
        {/* { props.data.map((tour, index) =>{

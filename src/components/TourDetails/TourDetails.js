@@ -1,28 +1,31 @@
 import { useParams } from "react-router-dom";
 import {Link} from 'react-router-dom'
 import { useState } from "react";
+import tourData  from '../../data/db.json'
 
-const [readMore , setReadMore] = useState (false)
 
-function TourDetails (props){
+
+function TourDetails (){
+    
     let {id} = useParams();
-    const result = props.data.filter((value)=> value.id === {id});
+    const [readMore , setReadMore] = useState (false);
+    const result = tourData.filter((value)=> value.id === id);
     return (
         <>
         <h2>{result[0].name}</h2>
         <p>
-            Description : {result[0].info}
+        {readMore ?
+            `Description : ${result[0].info}`
+            : `Description : ${result[0].info.substring(0,300)}` }
+
+           <button onClick = {() => setReadMore(!readMore)} >
+            {readMore ? 'Show Less' : 'Show More'}</button>
+
+            </p>
         
-            <button onClick = {() => setReadMore(!readMore)} >
-            {readMore ? 'Show More' : 'Show Less'}
-            
-            
-            </button>
-           
         
-        </p>
         <p>{result[0].price}</p>
-        <img src = '{result[0].image}' />
+        <img src = {result[0].image} />
     
         </>
     )
